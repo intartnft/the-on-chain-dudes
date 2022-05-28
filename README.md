@@ -47,7 +47,7 @@ loadOnChainDudes()
 ```
 
 ## API
-### Loading Dude
+### Initiating Dude
 Builds the "the dudes" script with given canvas element. Loaded dude will be drawn on this given canvas.
 ```javascript
 TheOnChainDudes.init(canvas)
@@ -59,20 +59,26 @@ Loads dude with given DNA. Every dude has its own DNA that defines their traits.
 theDudeController.loadDude(DNA)
 ```
 
-### Loading Dude
+### Resizing Dude
 Resizes the canvas and loaded dude.
 ```javascript
 theDudeController.resizeScene(width, height)
 ```
 
-### Loading Dude
+### Enable/Disable Rendering
 Enables/Disables the rendering.
 ```javascript
 theDudeController.setDudeAnimationEnabled(true/false)
 ```
 
-### Loading Dude
+### Freezing/Unfreezing Animations
 Keeps rendering but freezes the animations.
 ```javascript
 theDudeController.setDudeFrozen(true/false)
+```
+
+### Get Attributes
+Human readable trait descriptions
+```javascript
+theDudeController.contents.theDude.context.attributes
 ```
